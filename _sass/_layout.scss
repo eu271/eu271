@@ -166,29 +166,38 @@
 }
 
 .page-heading {
+    padding: 0;
+    margin: 0;
     font-size: 20px;
 }
 
 .post-list {
-    margin-left: 0;
+    margin: 0;
     list-style: none;
 
-    > li {
-        margin-bottom: $spacing-unit;
-    }
 }
 
 .post-meta {
+    display: inline-block;
     font-size: $small-font-size;
     color: $grey-color;
 }
 
-.post-link {
-    display: block;
-    font-size: 24px;
+.post-type {
+    text-transform: capitalize;
 }
 
+.post-link {
+    display: inline-block;
+    font-size: $small-font-size;
+}
 
+.proyect-separator {
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 15px;
+}
 
 /**
  * Posts
