@@ -1,8 +1,17 @@
 ---
 layout: post
-title:  "Realese v0.1-alpha starting a new proyect"
+title:  "Realese v0.1-alpha"
 date:   2015-07-25
-categories: html
+categories: html cyoa
+type: "realese update"
 ---
 
-Starting a new proyect today.
+Starting a new project today.
+
+## CYOA Game engine
+
+Based in the CYOA images you can find over the [internet](http://www.reddit.com/r/makeyourchoice/) where you've selected some path to a future life.  The basics are done, you can play the default [CYOA](http://eu271.github.io/CYOA/) over there in the repository web page. The default game is based on the idea of a world in which the fourth wall was broken so everything is possible. You have a hundred points to spend across the options.
+
+## The future
+
+I'm currently working on the editor to generate *json* files for the engine. I'm also planning on expanding the rules which apply in the game (e.g. Making some options only available if some previous option is selected), as well as improving the aesthetics.
