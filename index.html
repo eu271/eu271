@@ -10,8 +10,8 @@ layout: default
     {% for post in paginator.posts %}
       <li>
         <span class="post-meta">
-          <time datetime="{{ post.date }}"> 
-            {{ post.date | date: "%b %-d" }} 
+          <time datetime="{{ post.date }}">
+            {{ post.date | date: "%b %-d" }}
            </time>
         </span>
 
@@ -21,18 +21,18 @@ layout: default
       </li>
     {% endfor %}
   </ul>
-  
-  
+
+
   <hr class="proyect-separator">
-  
+
   <h1 class="page-heading">CYOA Proyect</h1>
 
   <ul class="post-list">
     {% for post in site.categories.cyoa %}
       <li>
         <span class="post-meta">
-          <time datetime="{{ post.date }}"> 
-            {{ post.date | date: "%b %-d" }} 
+          <time datetime="{{ post.date }}">
+            {{ post.date | date: "%b %-d" }}
            </time>
            {% if post.type != null %}
              <span class="post-type">
@@ -47,18 +47,23 @@ layout: default
       </li>
     {% endfor %}
   </ul>
-  
-  
-  <hr class="proyect-separator">
-  
-  <h1 class="page-heading">Soulog Proyect</h1>
 
+
+  <hr class="proyect-separator">
+
+  <h1 class="page-heading">Soulog Proyect</h1>
+  <p style="font-size:15px;">
+    <b>Soulog</b> is another CMS for blogging. Yeah! Another. One day in the morning, I said to myself "the world needs another freaking cms for blogging."
+  </p>
+
+
+  <h4> Updates </h4>
   <ul class="post-list">
     {% for post in site.categories.soulog %}
       <li>
         <span class="post-meta">
-          <time datetime="{{ post.date }}"> 
-            {{ post.date | date: "%b %-d" }} 
+          <time datetime="{{ post.date }}">
+            {{ post.date | date: "%b %-d" }}
            </time>
            {% if post.type != null %}
              <span class="post-type">
@@ -73,7 +78,7 @@ layout: default
       </li>
     {% endfor %}
   </ul>
+  <hr class="proyect-separator">
 
-  
 
 </div>

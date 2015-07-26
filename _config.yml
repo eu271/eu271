@@ -2,7 +2,7 @@
 title: Eugenio
 email: ochoa.lopez.eugenio@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  News about my projects and my interests. 
+  News about my projects and my interests.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://eu271.github.io/" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
@@ -13,7 +13,7 @@ markdown: kramdown
 
 future: false # Previene por publicar contenido que tiene fecha futura.
 
-paginate: 10 # Posts per page
+paginate: 25 # Posts per page
 
 defaults:
   -

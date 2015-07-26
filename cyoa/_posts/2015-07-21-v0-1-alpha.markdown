@@ -15,3 +15,7 @@ Based in the CYOA images you can find over the [internet](http://www.reddit.com/
 ## The future
 
 I'm currently working on the editor to generate *json* files for the engine. I'm also planning on expanding the rules which apply in the game (e.g. Making some options only available if some previous option is selected), as well as improving the aesthetics.
+
+#### Localization
+
+I'm working on localization. Only Spanish and English, maybe in future translations will be possible.
