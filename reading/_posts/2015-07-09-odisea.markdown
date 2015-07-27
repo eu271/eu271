@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "Leyendo la Odisea de Homero"
+date:   2015-07-09
+categories: reading español
+language: "español"
+
+# published: false
+
+
+---
+
+
+{{ Title }}
+
+{::options parse_block_html="true" /}
+<div style="text-align:center;">
+![Odisea Portada][Portada]
+
+</div>
+
+Estos dias estoy disfrutando de la Odisea.
+
+
+
+
+[Portada]: /reading/img/Odisea.jpg
+[WebVersion]: http://www.apocatastasis.com/odisea-homero.php

@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="home">
+  <h1 class="page-heading">Owen</h1>
+  <ul class="post-list">
+    {% for post in site.owen %}
+      <li>
+        <span class="post-meta">
+          <time datetime="{{ post.date }}">
+            {{ post.date | date: "%b %-d" }}
+           </time>
+           {% if post.type != null %}
+             <span class="post-type">
+               ({{ post.type }})
+             </span>
+           {% endif %}
+        </span>
+
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+            {{ post.title }}
+          </a>
+      </li>
+    {% endfor %}
+  </ul>
+  <hr class="proyect-separator">
+
+</div>

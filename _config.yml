@@ -19,6 +19,16 @@ defaults:
   -
     scope:
       path: "" # an empty string here means all files in the project
+    values:
+      language: "english"
+
+  -
+    scope:
+      path: ""
       type: "drafts"
     values:
       draft: "(Draft)"
+
+collections:
+  owen:
+    output: true
