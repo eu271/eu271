@@ -36,11 +36,26 @@
     <div id="reportTemplate">
       {{#reports}}
       <article id="{{id}}" class="report">
-        <h1 class="report-title">{{title}}</h1>
-        <section class="report-state">
+        <h1 class="report-title">{{title}} <i class="fa fa-fw {{symbol}}"></i></h1>
+        <section class="report-data">
+          <time datetime="{{date.toISOString}}">{{date.humanize}}</time>
+          ●
+          {{#tags}}
+          <a href="#" class="tag-link">#{{tag}}</a>,
+          {{/tags}}
+          <fieldset class="report-team">
+            <legend><i class="fa fa-users"></i> Assigned Team</legend>
+            {{#team}}
+              <ul class="report-data-teamlist">
+                <li>{{name}} — {{job}}</li>
+              </ul>
+            {{/team}}
+          </fieldset>
+
+
         </section>
         <section>
-          {{content}}
+          {{{content}}}
         </section>
       </article>
       {{/reports}}

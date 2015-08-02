@@ -119,6 +119,7 @@ nav {
   list-style-type:none;
 }
 .report-list-li {
+	cursor: pointer;
   width: 250px;
   height: 19px;
   background: white;
@@ -177,8 +178,35 @@ nav {
 .report-title {
   margin-bottom: 15px;
 }
-.report > p{
-  margin-top: 10px;
-  margin-bottom: 10px;
+.report-data {
+	color: grey;
+  font-style: oblique;
+  font-size: 12px;
+	width: 70%;
+	height: 100px;
+	display: block;
+}
+
+.report-team {
+	color:black;
+	font-style: normal;
+	text-decoration: none;
+
+	border: 1px solid black;
+	padding: 10px;
+	margin: 20px auto;
+}
+
+.tag-link {
+	color: grey;
+	text-decoration: none;
+}
+.report-data-teamlist {
+	
+}
+
+.report > section > p{
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 15px;
 }
