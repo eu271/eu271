@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Sunset Inc. Security Reports</title>
+  <meta name="description" content="Security reports from binary security deparment.">
+
+  <link rel="stylesheet" href="/designsprojects/css/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="/css/jquery.mustache.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+
+</head>
+<body>
+
+  <div id="templates" class="templates">
+    <div id="navTemplate">
+      <nav>
+        <ul class="report-list">
+          {{#reports}}
+          <li class="report-list-li" onclick="displayReport({{id}});">
+            <time class="report-list-item report-list-time" datetime="{{date.toISOString}}">{{date.humanize}}</time>
+            <div class="report-list-item report-list-title">{{title}}</div>
+            <div class="report-list-item report-list-icon"><i class="fa fa-fw {{symbol}}"></i></div>
+          </li>
+          {{/reports}}
+        </ul>
+      </nav>
+    </div>
+    <div id="reportTemplate">
+      {{#reports}}
+      <article id="{{id}}" class="report">
+        <h1 class="report-title">{{title}}</h1>
+        <section class="report-state">
+        </section>
+        <section>
+          {{content}}
+        </section>
+      </article>
+      {{/reports}}
+    </div>
+  </div>
+
+  <header>
+    <div class="logo">
+      <img src="/designsprojects/sunset/logo.png" alt="Sunset Inc." width="150px" height="auto" />
+    </div>
+    <section class="header-info">
+      <div class="security-advice">
+        <p>
+          <i class="fa fa-exclamation-triangle"></i>
+          Security reports from Binary Security Department of inteligence, inside Sunset Inc. Threats should be take seriously, actions to contrarrest any breach of security or solve system weakness will be taken imediatly.
+          <i class="fa fa-exclamation-triangle"></i>
+        </p>
+      </div>
+      <div class="title">
+        <h1>Secudrity Reports</h1>
+      </div>
+    </section>
+  </header>
+
+
+</body>
+</html>
