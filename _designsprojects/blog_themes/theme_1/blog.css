@@ -53,7 +53,31 @@ a {
 h1, h2, h3, h4, h5, h6 {
   font-size: 34px;
 	padding-bottom: 20px;
+	color: #2E2E1E;
 }
+
+h2, h3, h4, h5, h6 {
+  font-size: 30px;
+	padding-bottom: 20px;
+
+	color: #2E2E1E;
+}
+
+h3, h4, h5, h6 {
+  font-size: 24px;
+	padding-bottom: 20px;
+	font-weight: bold;
+
+	color: #2E2E1E;
+}
+
+h5, h6 {
+  font-size: 15px;
+	padding-bottom: 5<h5 class="comment-title"> Stalefish birdie wall ride kickflip pressure flip Eric Koston. </h5>px;
+
+	color: #2E2E1E;
+}
+
 
 p {
 	text-align: left;
@@ -65,6 +89,7 @@ body{
   margin: 0 auto;
   width: 100%;
   height: 100%;
+	background-image: url('background-white.png');
 }
 
 header {
@@ -80,7 +105,7 @@ header {
   text-align: center;
 
   color: bla;
-  background-image: url('backgrodun.png');
+  background-image: url('background.png');
 }
 
 .blog-title {
@@ -88,6 +113,17 @@ header {
 	color: white;
 }
 
+.closebutton {
+	line-height: 20px;
+	padding-right: 5px;
+	padding-left: 5px;
+	border-radius: 5px;
+	height: 20px;
+	width: 20px;
+}
+.closebutton:hover {
+	cursor: pointer;
+}
 .closeheader {
 	position: absolute;
 	top: 10px;
@@ -102,7 +138,7 @@ header {
 	width: 20px;
 
 	color: white;
-	background-image: url('backgrodun.png');
+	background-image: url('background.png');
 }
 
 .closeheader:hover {
@@ -114,14 +150,13 @@ header {
   position: absolute;
   bottom: 20px;
   width: 360px;
+	text-align: center;
   color: white;
 }
 
 .author-figure {
   padding-top: 10px;
   padding-bottom: 20px;
-
-	background-image: url('figure_background.png');
 }
 
 .author-image {
@@ -140,6 +175,7 @@ header {
 }
 
 .social-links {
+	display: inline-block;
 	list-style: none;
 }
 
@@ -159,13 +195,31 @@ header {
   padding: 20px;
   text-align: center;
 
-  background-image: url('background-white.png');
+
 
 }
 
 .post {
+	position: relative;
 	padding: 20px;
 	border-bottom: 1px solid black;
+}
+
+.coments-icon {
+	float:right;
+	padding-left: 20px;
+	color: grey;
+}
+
+@keyframes coment-icon-hover {
+	from {color: grey;}
+	to{color: CornflowerBlue;}
+}
+.coments-icon:hover {
+	animation-name: coment-icon-hover;
+  animation-duration: 2s;
+	animation-fill-mode: forwards;
+	cursor: pointer;
 }
 
 .post-title {
@@ -190,4 +244,149 @@ header {
 
 .post-author {
 	color: grey;
+}
+
+.post-tags {
+	display: inline-block;
+	padding-left: 10px;
+
+}
+.post-tag {
+	display: inline-block;
+	float: left;
+	font-size: 10px;
+	color: grey;
+}
+
+.post-footer {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+
+	height: 24px;
+
+	padding-left: 40px;
+	padding-right: 40px;
+
+	line-height: 24px;
+
+	color: black;
+}
+.footer-share {
+	display: inline-block;
+	float:right;
+	margin-right: 40px;
+	height: 24px;
+}
+
+.footer-share > li {
+	display: inline-block;
+	height: 24px;
+}
+.footer-comments {
+	float: right;
+	color: grey;
+}
+
+.closecomments {
+	display: none;
+	position: absolute;
+	top: 10px;
+	right: 555px;
+
+	border-left: 1px solid grey;
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+
+	background-image: url('background-white.png');
+}
+
+.comments {
+	display: none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+
+	width: 500px;
+
+	padding: 30px;
+
+	overflow: auto;
+
+	border-left: 1px solid grey;
+
+
+	color:black;
+	background-image: url('background-white.png');
+}
+
+.comment {
+	padding: 20px 10px 20px 10px;
+
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.comment:hover > .comment-title{
+	color: black;
+}
+
+.comment:hover > .comment-meta > .comment-author  {
+	color: #333385;
+}
+
+.comment:hover > .comment-foot > ul > li > a {
+	color: #333385;
+}
+
+.comment:hover > .comment-foot > ul > li > .comment-facebook {
+	color: #3b5998;
+}
+.comment:hover > .comment-foot > ul > li > .comment-twitter {
+	color: #55acee;
+}
+.comment:hover > .comment-foot > ul > li > .comment-reddit {
+	color: #ff5700;
+}
+.comment:hover > .comment-foot > .comment-flag {
+	color: #D11919;
+}
+
+.comment-foot a {
+	color: grey;
+}
+
+.comment-time {
+	color: grey;
+}
+
+.comment-author::before {
+	content: '―';
+	color: grey;
+}
+
+.comment-author {
+	color: grey;
+}
+
+.comment-foot {
+	padding-left: 10px;
+}
+
+.comment-foot > ul > li > a{
+	font-size: 12px;
+}
+.comment-links {
+	display: inline-block;
+}
+.comment-links > li {
+	display: inline-block;
+}
+.comment-recomend::after {
+	content: '-';
+}
+.comment-flag {
+	float:right;
 }

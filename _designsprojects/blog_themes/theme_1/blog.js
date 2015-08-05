@@ -22,16 +22,41 @@
 */
 
 var lectureModeToggle = function () {
-  if (!this.isClose) {
-		this.isClose = true
+
+  if (!this.isClose_lectureModeToggle) {
+		this.isClose_lectureModeToggle = true
     $('header').css('left', '-400px')
     $('.content').css('left', '0')
+    $('.content').css('padding-left', '50px')
+    $('.content').css('padding-right', '50px')
     $('#closeheader').html('<i class="fa fa-chevron-right"></i>')
   }else{
-		this.isClose = false
+		this.isClose_lectureModeToggle = false
     $('header').css('left', '0px');
     $('.content').css('left', '400px')
+    $('.content').css('right', '0px')
+
+    $('.content').css('padding-left', '20px')
+    $('.content').css('padding-right', '20px')
     $('#closeheader').html('<i class="fa fa-chevron-left"></i>')
   }
+}
 
+var toggleComments = function () {
+
+  if (this.isClose_lectureModeToggle){
+    $('.content').css('right', '500px')
+  }
+
+  if (this.isClose_toggleComments) {
+    this.isClose_toggleComments = false
+    $('#comments').css('display', 'none');
+    $('#closecomments').css('display', 'none');
+
+    $('.content').css('right', '0px')
+  }else {
+    this.isClose_toggleComments = true
+    $('#comments').css('display', 'block');
+    $('#closecomments').css('display', 'block');
+  }
 }
