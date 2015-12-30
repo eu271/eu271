@@ -32,5 +32,3 @@ defaults:
 collections:
   owen:
     output: true
-  designsprojects:
-    output: true
