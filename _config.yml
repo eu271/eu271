@@ -9,8 +9,6 @@ github_username:  eu271
 twitter_username: e2_71
 deviantart_username: eu271
 
-# gems
-gems: [jekyll-paginate]
 
 # Build settings
 markdown: kramdown
