@@ -10,9 +10,6 @@ twitter_username: e2_71
 deviantart_username: eu271
 
 
-# Build settings
-markdown: kramdown
-
 future: false # Previene por publicar contenido que tiene fecha futura.
 
 paginate: 25 # Posts per page
