@@ -1,12 +1,16 @@
 # Site settings
-title: Eugenio
+title: Eugenio Ochoa
 email: ochoa.lopez.eugenio@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   News about my projects and my interests.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://eu271.github.io/" # the base hostname & protocol for your site
-#twitter_username: jekyllrb
 github_username:  eu271
+twitter_username: e2_71
+deviantart_username: eu271
+
+# gems
+gems: [jekyll-paginate]
 
 # Build settings
 markdown: kramdown
@@ -20,6 +24,7 @@ defaults:
     scope:
       path: "" # an empty string here means all files in the project
     values:
+      author: "Eugenio Ochoa"
       language: "english"
 
   -

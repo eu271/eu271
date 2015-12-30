@@ -1,85 +1,18 @@
 ---
 layout: default
 ---
-
-
-
-<div class="home">
-
-  <h1 class="page-heading">All</h1>
-
-  <ul class="post-list">
-    {% for post in paginator.posts %}
-      <li>
-        <span class="post-meta">
-          <time datetime="{{ post.date }}">
-            {{ post.date | date: "%b %-d" }}
-           </time>
-        </span>
-
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-            {{ post.title }} {{post.draft}}
-          </a>
-      </li>
-    {% endfor %}
-  </ul>
-
-
-  <hr class="proyect-separator">
-
-  <h1 class="page-heading">CYOA Proyect</h1>
-
-  <ul class="post-list">
-    {% for post in site.categories.cyoa %}
-      <li>
-        <span class="post-meta">
-          <time datetime="{{ post.date }}">
-            {{ post.date | date: "%b %-d" }}
-           </time>
-           {% if post.type != null %}
-             <span class="post-type">
-               ({{ post.type }})
-             </span>
-          {% endif %}
-        </span>
-
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-            {{ post.title }}
-          </a>
-      </li>
-    {% endfor %}
-  </ul>
-
-
-  <hr class="proyect-separator">
-
-  <h1 class="page-heading">Soulog Proyect</h1>
-  <p style="font-size:12px;">
-    Another CMS for blogging. Yeah! Another. One day in the morning, I said to myself "the world needs another freaking cms for blogging."
-  </p>
-
-
-  <h4> Updates: </h4>
-  <ul class="post-list">
-    {% for post in site.categories.soulog %}
-      <li>
-        <span class="post-meta">
-          <time datetime="{{ post.date }}">
-            {{ post.date | date: "%b %-d" }}
-           </time>
-           {% if post.type != null %}
-             <span class="post-type">
-               ({{ post.type }})
-             </span>
-           {% endif %}
-        </span>
-
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-            {{ post.title }}
-          </a>
-      </li>
-    {% endfor %}
-  </ul>
-  <hr class="proyect-separator">
-
-</div>
+{% for post in site.posts %}
+  <article class="post">
+    <h1 class="post-title"> {{ post.title }} </h1>
+    <section class="post-metadata">
+      <time class="post-date"> {{ post.date | date: "%b %-d, %Y" }} </time>
+      <a class="post-author" href="#" rel="author"> {{ post.author }}</a>
+      <ul class="post-tags">
+        <li><a class="post-tag" href="#" rel="tag"> {{ post.meta }}</a></li>
+      </ul>
+    </section>
+    <section>
+      {{ post.content }}
+    </section>
+  </article>
+{% endfor %}

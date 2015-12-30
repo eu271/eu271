@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Realese v0.1-alpha"
+title:  "CYOA Realese v0.1-alpha"
 date:   2015-07-25
-categories: html cyoa
 type: "realese update"
+tags: CYOA Games
 ---
 
 Starting a new project today.

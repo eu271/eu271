@@ -1,245 +1,171 @@
-/**
- * Site header
- */
-.site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
 
-    // Positioning context for the mobile navigation icon
-    position: relative;
+
+.blog-links {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  a {
+    color: white;
+  }
 }
 
-.site-title {
-    font-size: 26px;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
+nav {
+  h3 {
+    color: white;
+  }
 
-    &,
-    &:visited {
-        color: $grey-color-dark;
-    }
+  hr {
+    color: blue;
+  }
 }
 
-.site-nav {
-    float: right;
-    line-height: 56px;
-
-    .menu-icon {
-        display: none;
-    }
-
-    .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
-
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
-        }
-    }
-
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-        }
-    }
+h1 {
+  font-size: 34px;
+  font-weight: bold;
+	padding-bottom: 20px;
+}
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+	padding-bottom: 15px;
+}
+h3, h4 {
+  font-size: 15px;
+  font-weight: bold;
+	padding-bottom: 12px;
 }
 
-
-
-/**
- * Site footer
- */
-.site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
+p {
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+body{
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
 }
 
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
+header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  width: 360px;
+
+  padding: 20px;
+
+  text-align: center;
+
+  color: black;
+  background-image: url('backgrodun.png');
 }
 
-.contact-list,
-.social-media-list {
-    list-style: none;
-    margin-left: 0;
+.blog-title {
+	font-family: 'Raleway', sans-serif;
+  text-shadow: 1px 1px red;
+	color: white;
 }
 
-.footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
+.closeheader {
+	position: absolute;
+	top: 10px;
+	left: 395px;
+	z-index: 9999;
+
+	text-align: right;
+	line-height: 20px;
+	padding-right: 5px;
+	border-radius: 5px;
+	height: 20px;
+	width: 20px;
+
+	color: white;
+	background-image: url('backgrodun.png');
 }
 
-.footer-col {
-    float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+.closeheader:hover {
+	color: purple;
+	cursor: pointer;
 }
 
-.footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
+.author-info {
+  position: absolute;
+  bottom: 20px;
+  width: 360px;
+  color: white;
 }
 
-.footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
+.author-figure {
+  padding-top: 10px;
+  padding-bottom: 20px;
+
+	text-align: center;
+
+	//background-image: url('figure_background.png');
 }
 
-.footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
+.author-image {
+	display: inline-block;
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 10px;
 }
 
-@include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
-    }
-
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
+.author-name {
+  font-size: 24px;
 }
 
-@include media-query($on-palm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
+.social-links {
+	list-style: none;
 }
 
-
-
-/**
- * Page content
- */
-.page-content {
-    padding: $spacing-unit 0;
+.social-links li {
+	display: inline;
 }
 
-.page-heading {
-    padding: 0;
-    margin: 0;
-    font-size: 20px;
-}
+.content {
+  position: absolute;
+  left: 400px;
+  right: 0;
+  top: 0;
+  bottom: 0;
 
-.post-list {
-    margin: 0;
-    list-style: none;
+  overflow: auto;
+
+  padding: 20px;
+  text-align: center;
+
+  background-image: url('background-white.png');
 
 }
 
-.post-meta {
-    display: inline-block;
-    font-size: $small-font-size;
-    color: $grey-color;
-}
-
-.post-type {
-    text-transform: capitalize;
-}
-
-.post-link {
-    display: inline-block;
-    font-size: $small-font-size;
-}
-
-.proyect-separator {
-    border-bottom: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    padding: 15px;
-}
-
-/**
- * Posts
- */
-.post-header {
-    margin-bottom: $spacing-unit;
+.post {
+	padding: 20px;
+	border-bottom: 1px solid black;
 }
 
 .post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
+	padding: 0;
 }
 
-.post-content {
-    margin-bottom: $spacing-unit;
+.post-metadata {
+	padding-top: 5px;
+	padding-bottom: 10px;
+	padding-left: 40px;
+	padding-right: 60px;
 
-    h2 {
-        font-size: 32px;
+	text-align: left;
 
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
-    }
+	color: grey;
+}
 
-    h3 {
-        font-size: 26px;
+.post-author::before {
+	content: '―';
+	color: grey;
+}
 
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
-    }
-
-    h4 {
-        font-size: 20px;
-
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
-    }
+.post-author {
+	color: grey;
 }

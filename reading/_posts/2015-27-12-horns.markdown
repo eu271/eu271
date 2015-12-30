@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "Reading Horns by Joe Hills"
+date:   2015-12-27
+language: "español"
+# published: false
+---
+
+{::options parse_block_html="true" /}
+<div class="book-cover">
+![Horns Cover][Portada]
+</div>
+
+Estos dias estoy disfrutando de la [Amazon][Amazon].
+
+
+
+
+[Portada]: /reading/img/Horns.jpg
+[Amazon]: http://www.amazon.es/Horns-Joe-Hill/dp/0575079169

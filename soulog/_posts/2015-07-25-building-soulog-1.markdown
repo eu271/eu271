@@ -2,7 +2,6 @@
 layout: post
 title:  "Building Soulog 1"
 date:   2015-07-25
-categories: soulog html golang
 type: "Story"
 ---
 
