@@ -3,6 +3,7 @@ layout: post
 title:  "Leyendo la Odisea de Homero"
 date:   2015-07-09
 language: "español"
+category: reading
 # published: false
 ---
 
@@ -16,5 +17,5 @@ Estos dias estoy disfrutando de la [Odisea][WebVersion].
 
 
 
-[Portada]: /reading/img/Odisea.jpg
+[Portada]: /assets/posts/reading/Odisea.jpg
 [WebVersion]: http://www.apocatastasis.com/odisea-homero.php

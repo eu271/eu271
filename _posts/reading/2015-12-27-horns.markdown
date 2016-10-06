@@ -3,6 +3,7 @@ layout: post
 title:  "Reading Horns by Joe Hills"
 date:   2015-12-27
 language: "español"
+category: reading
 # published: false
 ---
 
@@ -11,10 +12,10 @@ language: "español"
 ![Horns Cover][Portada]
 </div>
 
-Estos dias estoy disfrutando de la [Amazon][Amazon].
+Habiendo visto [Horns][imdb], tenia que saber de donde habia salido la pelicula.  [][Amazon].
 
 
 
-
-[Portada]: /reading/img/Horns.jpg
+[imdb]: http://www.imdb.com/title/tt1528071/
+[Portada]: /assets/posts/reading/Horns.jpg
 [Amazon]: http://www.amazon.es/Horns-Joe-Hill/dp/0575079169

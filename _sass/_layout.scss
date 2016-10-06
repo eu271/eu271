@@ -169,3 +169,28 @@ header {
 .post-author {
 	color: grey;
 }
+
+.book-cover p {
+    text-align: center;
+}
+
+.post-tags {
+    display: inline;
+}
+
+.post-tags  {
+    li, a {
+        display: inline;
+        color: grey;
+    }
+}
+
+.square {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+
+    border: solid 1px 1px 1px 0px black;
+
+    background-image: url('backgrodun.png');
+}

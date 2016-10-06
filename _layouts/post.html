@@ -6,8 +6,11 @@ layout: default
   <section class="post-metadata">
     <time class="post-date"> {{ page.date | date: "%b %-d, %Y" }} </time>
     <a class="post-author" href="#" rel="author"> {{ page.author }}</a>
+
     <ul class="post-tags">
-      <li><a class="post-tag" href="#" rel="tag"> {{ page.meta }}</a></li>
+      {% for tag in page.tags %}
+      <li><a class="post-tag" href="#" rel="{{ tag }}"> {{ tag }}</a></li>
+    {% endfor %}
     </ul>
   </section>
   <section>

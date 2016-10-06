@@ -4,6 +4,7 @@ title:  "CYOA Realese v0.1-alpha"
 date:   2015-07-25
 type: "realese update"
 tags: CYOA Games
+category: Dev
 ---
 
 Starting a new project today.

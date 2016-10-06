@@ -3,6 +3,7 @@ layout: post
 title:  "Building Soulog 1"
 date:   2015-07-25
 type: "Story"
+category: Dev
 ---
 
 My baby project, my beloved "CMS for blogging". I know, I know, "another freaking CMS for blogging". So many (like four) years ago, writing a Wordpress plugin I decided to write my blog starting from scratch. PHP+MySQL seems a reasonable combo but quickly realize the complex of the matter. Developing all that in PHP was driving me mad, PHP was not a language I knew and it was a complex project. Well... It was not that complicated to do some basic working blog, but I wanted to be my baby and not some ugly mosntruosity like the first Wordpress versions.

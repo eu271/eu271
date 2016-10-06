@@ -9,10 +9,12 @@ github_username: eu271
 twitter_username: e2_71
 deviantart_username: eu271
 
+gems: [jekyll-paginate]
 
 future: false # Previene por publicar contenido que tiene fecha futura.
 
-paginate: 25 # Posts per page
+paginate: 7 # Posts per page
+paginate_path: "/page:num/"
 
 defaults:
   -
