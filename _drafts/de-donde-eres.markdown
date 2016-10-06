@@ -2,6 +2,7 @@
 layout: post
 date:   2015-07-31
 title:  "¿De dónde eres?"
+categories: drafts
 ---
 
 Muchas veces me he echo esa misma pregunta, ¿De dónde soy? Naci en un pais, a los diez años me cambie de continente. El idioma en principio no seria una barrera, no tenia que aprender una nueva lengua. Lo primero que uno nota es la comida, como cambia la dieta. Lo segundo que nota son las pequeñas costumbres que tenias, a la hora de ir al colegio, a la hora de caminar por la calle, el olor del lugar, la forma de las personas...Con diez años no entiendes muy bien donde estas, tube la suerte de no extrañar a mi familia. Nunca estube cerca de la mayoria de mi familia ¿Qué diferencia hay entre mil kilometros y seis mil kilometros?
